@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: grey;">hello</h2>
+
+
+
+
+
+
+
+
+
+    <script >
+        document.write("hello from script.js");
+        console.log("script.js loaded");
+        var i=1;
+        document.write("<br>value of i is: " + i++);
+        document.write("<br>value of i is: " + i);
+        document.write("<br>value of i is: " + ++i +"<br>");
+        
+        //alert("hello from script.js");
+        //var name = prompt("enter your name");
+        //document.write("<br> name is: " + name);
+        //confirm("are you sure you want to proceed?");
+
+
+    function isArmstrong(num) {
+    if (num < 0) return false;
+    const digits = String(num).length;
+    let sum = 0;
+    let n = num;
+    while (n > 0) {
+        const d = n % 10;
+        sum += Math.pow(d, digits);
+        n = Math.floor(n / 10);
+    }
+    return sum === num;
+}
+
+let result1 = isArmstrong(153);
+let result2 = isArmstrong(9474);
+let result3 = isArmstrong(123);
+document.writeln("153 is Armstrong: " + result1 + "<br>"); 
+document.writeln("9474 is Armstrong: " + result2 + "<br>"); 
+document.writeln("123 is Armstrong: " + result3 + "<br>");
+
+
+
+    </script>
+        
+    
+</body>
+</html>
