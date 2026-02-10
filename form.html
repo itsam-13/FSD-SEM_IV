@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+        function check(){
+            var uid = document.getElementById("userid").value
+            var pwd = document.getElementById("pwd").value
+            var msg = " ";
+            if(uid.length == 0){
+                alert("Username is empty !!")
+            }
+            else if(pwd.length == 0){
+                alert("Password is empty !!")
+            }
+            else{
+                alert("Username and Password are correct !!")
+            }
+            if(uid.length == 0 && pwd.length == 0){
+                alert("Username and Password fields are empty !!")
+            }
+            if(uid == "admin" && pwd == "admin123"){
+                alert("Welcome Admin !!")
+            }
+            else{
+                alert("Invalid username or password !!")
+            }
+        }
+    </script>
+<body>
+    <form action="" method="post">
+        <label for="Name">Name:
+        <input type="text" id="name" name="Name"><br><br>
+        <label for="">Username
+        <input type="text" id="userid" name="userid"><br><br>
+        <label for="password">Password: 
+        <input type="password" id="pwd" name="password"><br><br>
+        <input type="submit" value="submit" onclick="check()"><br><br>
+    </form>
+</body>
+</html>
